@@ -1,0 +1,759 @@
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #222;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+
+form * {
+    appearance: none;
+    border: none;
+    background: none;
+}
+
+/* style */
+#start header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    white-space: nowrap;
+}
+
+
+#start header .inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#start header .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 20px 0;
+}
+
+#start header.active .top {
+    padding-bottom: 0px;
+}
+
+#start header .top .logo a{
+    display: inline-block;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 184px;
+    height: 64px;
+    background: url(../images/logo.png) no-repeat center;
+    background-size: cover;
+}
+
+#start header .top .utils ul{
+    display: flex;
+    gap: 33px;
+    font-size:  0.8125em;
+}
+
+#start header .top .utils ul li {
+    position: relative;
+}
+
+#start header .top .utils ul li::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 15px;
+    background-color: #bfbfbf;
+}
+
+#start header .top .utils ul li:last-child:after{
+    display: none;
+}
+
+#start header .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 12px;
+}
+
+#start header.active .bottom {
+    align-items: center;
+    padding-top: 12px;
+}
+
+#start header .bottom #gnb ul {
+    display: flex;
+}
+
+#start header .bottom #gnb ul li a {
+    padding: 0 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+#start header .bottom #gnb ul li:first-child a {
+    padding-left: 0;
+}
+
+#start header .bottom #gnb ul li a.store {
+    color: #74b243;
+}
+
+#start header .bottom .tab {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 25px;
+    height: 20px;
+}
+
+#start header .bottom .tab span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+    transition: 0.3s;
+}
+
+#start header .bottom .tab.active span {
+    position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#start header .bottom .tab.active span:nth-child(1){
+    transform: rotate(45deg);
+}
+#start header .bottom .tab.active span:nth-child(2){
+    display: none;
+}
+#start header .bottom .tab.active span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+#start header .bottom .search {
+    width: 465px;
+    height: 47px;
+    border: solid 3px #74b243;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+#start header .bottom .search form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#start header .bottom .search input {
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#start header .bottom .search button {
+    display: inline-block;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    background: url(../images/icon_search.png) no-repeat center;
+    background-size: contain;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+#start header .bottom #mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1px;
+    transform: translateY(100%);   
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#start header .bottom #mobile ul li a {
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+#start header .bottom #mobile ul li a.store {
+    color: #74b243;
+}
+
+
+.main_slider {
+    margin-top: 177px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_slider .swiper_container {
+    width: 100%;
+    height: 100%;
+}
+
+.main_slider  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_slider .swiper-slide img.mobile {
+    display: none;
+}
+
+.main_slider .controller {
+    position: absolute;
+    width: 1180px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 900;
+    pointer-events: none;
+}
+
+.main_slider .controller .left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    pointer-events: initial;
+}
+.main_slider .controller .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    pointer-events: initial;
+}
+
+
+.swiper-pagination-fraction {
+    color: #fff;
+    font-size: 0.875em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 16px;
+    border-radius: 12px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    transition: 0.3s;
+}
+
+#sec1 {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 0;
+    transition: padding 0.3s;
+}
+
+#sec1 .best_recipe .text {
+    text-align: center;
+}
+
+#sec1 .best_recipe .text .title,
+#sec2 .best_shop .top .title {
+    font-size: 2.25em;
+    letter-spacing: 0.18em;
+}
+
+#sec1 .best_recipe .text .title span,
+#sec2 .best_shop .top .title span {
+    color: #74b243;
+}
+#sec1 .best_recipe .text .desc {
+    margin-top: 15px;
+    color: #777;
+}
+
+#sec1 .best_recipe .more {
+    margin-top: 50px;
+    text-align: right;
+}
+
+#sec1 .best_recipe .more a,
+#sec2 .best_shop .top .more a {
+    padding-right: 20px;
+    background: url(../images/more_arrow.png) no-repeat right center;
+}
+
+#sec1 .best_recipe .contents {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    word-break: keep-all;
+}
+
+#sec1 .best_recipe .contents div[class^=banner] {
+    position: relative;
+}
+
+#sec1 .best_recipe .contents .title {
+    width: 70%;
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    z-index: 10;
+}
+
+#sec1 .best_recipe .contents .thumb .dim {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%);
+}
+
+#sec1 .best_recipe .contents .left .title {
+    left: 40px;
+    font-size: 2.5em;
+    letter-spacing: -0.05em;
+}
+
+#sec1 .best_recipe .contents .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec1 .best_recipe .contents .right .title {
+    left: 24px;
+    font-size: 1.25em;
+}
+
+#sec2 {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+#sec2 .best_shop {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 0;
+    transition: padding 0.3s;
+}
+
+#sec2 .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sub_slider {
+    margin-top: 20px;
+    position: relative;
+}
+
+.sub_slider .inner {
+    overflow: hidden;
+}
+.sub_slider .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sub_slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_slider .swiper-slide .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub_slider .swiper-slide .title {
+    margin: 20px 0 5px 0;
+    font-size: 1em;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.sub_slider .swiper-slide .price_area {
+    white-space: nowrap;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.sub_slider .swiper-slide .sale {
+    color: #ea4040;
+}
+
+.sub_slider .swiper-slide .price_origin {
+    font-size: 0.875em;
+    color: #999;
+    text-decoration:line-through;
+}
+
+.sub_slider .swiper-slide .review {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.sub_slider .swiper-slide .star {
+    margin-right: 5px;
+}
+
+.sub_slider .swiper-slide .rate {
+    margin-right: 10px;
+    font-size: 1.125em;
+}
+
+.sub_slider .swiper-slide .count {
+    font-size: 0.875em;
+    color: #999;
+    line-height: 22px;
+}
+
+
+.sub_slider .controller .left {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: initial;
+    z-index: 100;
+}
+
+
+.sub_slider .controller .right {
+    position: absolute;
+    right: -100px;
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: initial;
+    z-index: 100;
+}
+
+footer {
+    background-color: #0a0504;
+    color: #fff;
+}
+
+footer .inner {
+    margin: 0 auto;
+    max-width: 1180px;
+    word-break: keep-all;
+}
+
+footer .inner .top {
+    padding-top: 20px;
+    word-break: break-all;
+}
+
+footer .inner .top .menu {
+    display: inline-block;
+}
+
+footer .inner .top .menu ul {
+    display: flex;
+    gap: 36px;
+}
+
+footer .inner .top .menu ul li {
+    position: relative;
+}
+
+footer .inner .top .menu ul li a {
+    color: #fff;
+    font-size:  0.875em;
+}
+
+footer .inner .top .menu ul li::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #bfbfbf;
+}
+
+footer .inner .top .menu ul li:last-child:after {
+    display: none;
+}
+
+footer > .inner > .middle {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner .middle .left .logo {
+    overflow: hidden;
+    text-indent: -1000px;
+    width: 259px;
+    height: 90px;
+    background: url(../images/logo_footer.png) no-repeat center;
+    background-size: contain;
+    transition: 0.3;
+}
+
+footer .inner .middle .sns ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+footer .inner .middle .middle,
+footer .inner .middle .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .inner .middle .middle .service .title a {
+    font-size: 1.125em;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 16px;
+    background: url(../images/footer_arrow.png) no-repeat right center;
+}
+
+footer .inner .middle .middle .service .desc {
+    margin-top: 5px;
+    font-size: 0.8125em;
+    color: #888;
+}
+
+footer .inner .middle p {
+    font-size: 0.8125em;
+}
+
+footer .inner .middle .tel {
+    margin-top: 15px;
+}
+
+footer .inner .middle .right a {
+    color: #74b243;
+    font-weight: 500;
+} 
+
+footer .inner .bottom {
+    padding: 30px 0;
+}
+
+footer .inner .bottom p {
+    font-size:  0.875em;
+    letter-spacing: 0.1em;
+}
+
+.btn_top {
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 1180px){
+    body {
+        font-size: 0.9em;
+    }
+    
+    .main_slider .controller{
+        width: 100%;
+    }
+    .main_slider .controller .left {
+        left: 20px;
+    }
+    .main_slider .controller .right {
+        right: 20px;
+    }
+    header .inner {
+        padding: 0 20px;
+    }
+
+    #sec1 .best_recipe {
+        padding: 0 20px;
+    } 
+    #sec2 {
+        padding: 0 20px;
+    } 
+
+    footer .inner {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    footer {
+        text-align: center;
+    }
+    
+    footer > .inner > .middle {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 720px){
+    body {
+        font-size: 0.8em;
+    }
+
+    .main_slider .swiper-slide img.pc {
+        display: none;
+    }
+
+    .main_slider .swiper-slide img.mobile {
+        display: block;
+    }
+
+    .main_slider .controller {
+        display: none;
+    }
+
+
+    #sec1 {
+        padding: 60px 0;
+    }
+
+    #sec1 .best_recipe .contents {
+        flex-direction: column;
+    }
+
+    #sec1 .best_recipe .contents div[class^=banner] img {
+        width: 100%;
+    }
+
+
+    #sec1 .best_recipe .contents .left .title {
+        left: 24px;
+        font-size: 1.875em;
+        }
+        
+    #sec1 .best_recipe .contents .right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #sec1 .best_recipe .contents .right .title {
+    left: 24px;
+    font-size: 1.875em;
+    }
+    
+    #sec2 {
+        padding-right: 0;
+    } 
+
+    #sec2 .best_shop {
+        padding: 60px 0;
+    }
+
+    #sec2 .top {
+        padding-right: 20px;
+    }
+
+    footer .inner .middle .left .logo {
+        width: 200px;
+    }
+
+    .btn_top {
+        right: 20px;
+        bottom: 20px;
+    }
+    
+
+}
+
+
+    @media only screen and (max-width: 500px){
+
+.swiper-pagination-fraction {
+    padding: 2px 10px;
+    bottom: 6px;
+}
+
+
+#start header .bottom {
+    align-items: center;
+}
+
+#start header .top .utils {
+    display: none;
+}
+#start header .bottom #gnb {
+    display: none;
+}
+
+#start header .bottom .tab {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-right: 20px;
+}
+
+}

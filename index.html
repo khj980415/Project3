@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+    <title>만개의레시피</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="start">
+            <header>
+                <div class="inner">
+                    <div class="top">
+                        <h1 class="logo"><a href="">logo</a></h1>
+                        <div class="utils">
+                            <ul>
+                                <li><a href="">로그인</a></li>
+                                <li><a href="">마이페이지</a></li>
+                                <li><a href="">회원가입</a></li>
+                                <li><a href="">고객센터</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <nav id="gnb">
+                            <ul>
+                                <li><a href="">레시피</a></li>
+                                <li><a href="">매거진</a></li>
+                                <li><a href="">커뮤니티</a></li>
+                                <li><a href="">클래스</a></li>
+                                <li><a href="">이벤트</a></li>
+                                <li><a href="" class="store">스토어</a></li>
+                            </ul>
+                        </nav>
+                        <nav id="mobile">
+                            <ul>
+                                <li><a href="">레시피</a></li>
+                                <li><a href="">매거진</a></li>
+                                <li><a href="">커뮤니티</a></li>
+                                <li><a href="">클래스</a></li>
+                                <li><a href="">이벤트</a></li>
+                                <li><a href="" class="store">스토어</a></li>
+                            </ul>
+                        </nav>
+                        <div class="tab_wrapper">
+                            <div class="tab">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="요리, 재료 검색">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="main_slider">
+                <div class="swiper_container mainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main_slide1.jpg" alt="main slider1" class="pc">
+                            <img src="images/m_main_slide1.jpg" alt="main slider1" class="mobile">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main_slide2.jpg" alt="main slider2" class="pc">
+                            <img src="images/m_main_slide2.jpg" alt="main slider2" class="mobile">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main_slide3.jpg" alt="main slider3" class="pc">
+                            <img src="images/m_main_slide3.jpg" alt="main slider3" class="mobile">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main_slide4.jpg" alt="main slider4" class="pc">
+                            <img src="images/m_main_slide4.jpg" alt="main slider4" class="mobile">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="controller">
+                        <div class="left"><a href=""><img src="images/main_slide_arrow_prev.png" alt="main slide prev"></a></div>
+                        <div class="right"><a href=""><img src="images/main_slide_arrow_next.png" alt="main slide next"></a></div>
+                    </div>
+            </div>
+        </div>
+        <section id="sec1">
+            <div class="best_recipe">
+                <div class="text">
+                    <h2 class="title">오늘의 <span>추천</span> 레시피</h2>
+                    <p class="desc">만개의 BEST 레시피를 만나보세요</p>
+                </div>
+                <div class="more"><a href="">더 보기</a></div>
+                <div class="contents">
+                    <div class="left">
+                        <div class="banner1">
+                            <a href="">
+                                <h3 class="title">감자 1박스 뽀개기 가능한 7가지 감자 요리</h3>
+                                <div class="thumb">
+                                    <div class="dim"></div>
+                                    <img src="images/banner1.png" alt="banner1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="banner2">
+                            <a href="">
+                                <h3 class="title">하루의 마무리는 역시 야식이지! 야식추천메뉴 8가지</h3>
+                                <div class="thumb">
+                                    <div class="dim"></div>
+                                    <img src="images/banner2.png" alt="banner2">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="banner3">
+                            <a href="">
+                                <h3 class="title">'우유'가 들어가 더 부드럽고 고소한 우유 활용 레시피</h3>
+                                <div class="thumb">
+                                    <div class="dim"></div>
+                                    <img src="images/banner3.png" alt="banner3">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section id="sec2">
+                <div class="best_shop">
+                    <div class="top">
+                            <h2 class="title"><span>쇼핑</span> BEST</h2>
+                        <div class="more"><a href="">더 보기</a></div>
+                    </div>
+                    <div class="sub_slider">
+                        <div class="inner">
+                            <div class="swiper_container subSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide1.png" alt="sub slider1"></div>
+                                            <p class="title">[1+1특가] 호주 판매 1위! 프리미엄 통곡물 씨드 크래커 크리스프빅 6종 1+1</p>
+                                            <div class="price_area">
+                                                <span class="sale">52%</span>
+                                                <span class="price">10,900원</span>
+                                            </div>
+                                            <p class="price_origin">22,900원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.6</span>
+                                                <span class="count">(후기 292)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide2.png" alt="sub slider2"></div>
+                                            <p class="title">여름철 모기벌레기피 필수 아이템 포켓몬 뽀로로 핑크퐁 썸머 모기팔찌 키퍼링</p>
+                                            <div class="price_area">
+                                                <span class="sale">20%</span>
+                                                <span class="price">7,900원</span>
+                                            </div>
+                                            <p class="price_origin">9,900원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.8</span>
+                                                <span class="count">(후기 306)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide3.png" alt="sub slider3"></div>
+                                            <p class="title">[공동구매] 알텐바흐 큐라이네 디펜더스 후라이팬</p>
+                                            <div class="price_area">
+                                                <span class="sale">46%</span>
+                                                <span class="price">53,000원</span>
+                                            </div>
+                                            <p class="price_origin">99,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">5</span>
+                                                <span class="count">(후기 6)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide4.png" alt="sub slider4"></div>
+                                            <p class="title">디베아 ALLNEW29000 차이슨 무선청소기 최대 진공도 45000PA</p>
+                                            <div class="price_area">
+                                                <span class="sale">37%</span>
+                                                <span class="price">239,000원</span>
+                                            </div>
+                                            <p class="price_origin">379,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">5</span>
+                                                <span class="count">(후기 22)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide5.png" alt="sub slider4"></div>
+                                            <p class="title">헹켈 스페셜 파스타 냄비세트 HK40990-005</p>
+                                            <div class="price_area">
+                                                <span class="sale">49%</span>
+                                                <span class="price">82,400원</span>
+                                            </div>
+                                            <p class="price_origin">160,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.8</span>
+                                                <span class="count">(후기 14)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide6.png" alt="sub slider4"></div>
+                                            <p class="title">레오폴디 칼린타 에어프라이기 3L (2color)</p>
+                                            <div class="price_area">
+                                                <span class="sale">82%</span>
+                                                <span class="price">43,900원</span>
+                                            </div>
+                                            <p class="price_origin">250,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.8</span>
+                                                <span class="count">(후기 122)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide7.png" alt="sub slider4"></div>
+                                            <p class="title">블랙모어스 코엔자임 Q10 코큐텐 멀티 액션 큐텐 60캡슐 1병/2병/4병/6병</p>
+                                            <div class="price_area">
+                                                <span class="sale">52%</span>
+                                                <span class="price">23,900원</span>
+                                            </div>
+                                            <p class="price_origin">50,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.6</span>
+                                                <span class="count">(후기 86)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="thumb"><img src="images/sub_slide8.png" alt="sub slider4"></div>
+                                            <p class="title">SWISSMILITARY 스위스밀리터리 분리식 전기 그릴 SMA-DG600D</p>
+                                            <div class="price_area">
+                                                <span class="sale">45%</span>
+                                                <span class="price">32,900원</span>
+                                            </div>
+                                            <p class="price_origin">60,000원</p>
+                                            <div class="review">
+                                                <div class="star"><img src="images/icon_star.png" alt="star"></div>
+                                                <span class="rate">4.5</span>
+                                                <span class="count">(후기 21)</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                            <div class="controller">
+                                <div class="left"><a href=""><img src="images/sub_slide_arrow_prev.png" alt="sub slide prev"></a></div>
+                                <div class="right"><a href=""><img src="images/sub_slide_arrow_next.png" alt="sub slide next"></a></div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        <footer>
+            <div class="inner">
+                <div class="top">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">광고문의</a></li>
+                            <li><a href="">개인정보처리약관</a></li>
+                            <li><a href="">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="left">
+                        <h1 class="logo">logo large</h1>
+                        <div class="sns">
+                            <ul>
+                                <li><a href=""><img src="images/icon_sns1.png" alt="facebook"></a></li>
+                                <li><a href=""><img src="images/icon_sns2.png" alt="instagram"></a></li>
+                                <li><a href=""><img src="images/icon_sns3.png" alt="youtube"></a></li>
+                                <li><a href=""><img src="images/icon_sns4.png" alt="naver blog"></a></li>
+                                <li><a href=""><img src="images/icon_sns5.png" alt="kakao story"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="service">
+                            <div class="title"><a href="">고객센터</a></div>
+                            <span class="desc">(평일 10 : 00 ~ 18 : 00)</span>
+                        </div>
+                        <div class="tel">
+                            <p>쇼핑문의(만개스토어) 02-6953-4433</p>
+                            <p>서비스이용문의 070-4896-6416</p>
+                        </div>
+                        <p>제휴문의 : marketing@10000recipe.com</p>
+                    </div>
+                    <div class="right">
+                        <p>㈜ 만개의 레시피</p>
+                        <p>대표: 이인경 |  help@10000recipe.com | 02-323-5049</p>
+                        <p>서울시 금천구 가산동 371-50 에이스하이엔드타워 3차 1106-1호</p>
+                        <p>사업자등록번호: 291-81-02485 | 통신판매업신고: 2022-서울금천-3089 <a href="" class="link">사업자정보확인</a></p>
+                        <p>서울지방중소기업청 제 031134233-1-01643호</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="copyright">Copyright 만개의레시피 Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <div class="btn_top"><a href=""><img src="images/btn_top.png" alt="to top"></a></div>
+    </div>
+</body>
+</html>
